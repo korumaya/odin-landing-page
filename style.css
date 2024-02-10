@@ -1,7 +1,13 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
     margin: 0;
-    max-width: 100%;
+    padding: 0;
+    border: 0;
+    width: 100vw;
+    height: 100vh;
 }
 
 .top-of-page {
@@ -17,6 +23,9 @@ body {
 .header-logo {
     font-size: 24px;
     color: #f9faf8;
+    margin-left: 150px;
+    margin-top: 17px;
+    font-weight: bold;
 }
 
 .header-links {
@@ -24,6 +33,15 @@ body {
     color: #e5e7eb;
     display: flex;
     gap: 30px;
+    margin-right: 150px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    margin-left: 150px;
+    padding-bottom: 100px;
 }
 
 .hero h3 {
@@ -35,23 +53,57 @@ body {
 .hero p {
     font-size: 18px;
     color: #e5e7eb;
-   
+    padding-right: 70px;
 }
 
 .hero button {
     background-color: #3882f6;
     color: #e5e7eb;
+    margin-top: 38px;
+    border: 0;
+    padding: 7px 23px 7px 23px;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+#hero-img {
+    margin-right: 150px;
+    width: 500px;
+    height: auto;
+    padding-top: 55px;
 }
 
 .middle-of-page h3 {
     font-size: 36px;
     font-weight: extra-bold;
     color: #1f2937;
+    text-align: center;
+}
+
+.middle-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 128px;
 }
 
 .middle-of-page img {
     border-color: #3882f6;
-    border-radius: 10px;
+    border-radius: 20px;
+    border-width: 4px;
+    border-style: solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: center;
+    width: 170px;
+    height: auto;
+}
+
+.middle-of-page figcaption {
+    font-size: 14px;
+    text-align: center;
+    opacity: 0.5;
+    margin-top: 5px;
 }
 
 .quote {
@@ -60,4 +112,40 @@ body {
     font-size: 36px;
     font-weight: lighter;
     font-style: italic;
+}
+
+.thor {
+    font-weight: bold;
+    font-style: normal;
+}
+
+.call-to-action {
+    background-color: #3882f6;
+    margin: 150px;
+    border-radius: 7px;
+}
+
+.call-to-action button {
+    background-color: #3882f6;
+    border: #f9faf8;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 3px;
+    float:right;
+    color:#f9faf8;
+}
+
+.action-text {
+    color: #f9faf8;
+    margin: 20px 50px 20px 50px;
+}
+
+footer {
+    color: #F9FAF8;
+    background-color: #363636;
+    padding: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
